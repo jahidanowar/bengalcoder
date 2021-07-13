@@ -17,7 +17,9 @@
             bengalcoder provide all the essential skill sets that all you need
             to succeed in the field of IT.
           </p>
-          <button class="btn btn-primary mt-5">learn now</button>
+          <nuxt-link to="/blog" class="btn btn-primary mt-5"
+            >learn now</nuxt-link
+          >
         </div>
         <div class="w-full md:w-1/2">
           <!-- <img src="~/assets/img/bengalcoder-hero-image.svg" width="400px" /> -->
