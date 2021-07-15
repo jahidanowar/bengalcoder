@@ -1,5 +1,7 @@
 <template>
-  <div class="blog"></div>
+  <div class="blog">
+    {{ blogs }}
+  </div>
 </template>
 
 <script>

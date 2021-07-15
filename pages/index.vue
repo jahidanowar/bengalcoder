@@ -1,11 +1,11 @@
 <template>
   <div>
     <!-- Hero Section -->
-    <section class="hero py-10 md:py-12">
+    <section class="hero py-10 md:py-28">
       <div
         class="container mx-auto flex flex-wrap justify-between items-center"
       >
-        <div class="w-full md:w-1/2 mb-10 text-center md:text-left">
+        <div class="w-full md:w-1/2 mb-10 md:mb-0 text-center md:text-left">
           <h1 class="text-4xl md:text-6xl font-bold leading-tight">
             we help you to build
             <span class="text-indigo-500 dark:text-indigo-600"
@@ -13,27 +13,37 @@
             >
             on the internet
           </h1>
-          <p class="mt-5 text-xl">
+          <p class="mt-5 text-xl md:pr-24">
             bengalcoder provide all the essential skill sets that all you need
             to succeed in the field of IT.
           </p>
-          <nuxt-link to="/blog" class="btn btn-primary mt-5"
+          <nuxt-link to="/blog" class="btn btn-primary mt-5 inline-block"
             >learn now</nuxt-link
           >
         </div>
         <div class="w-full md:w-1/2">
           <!-- <img src="~/assets/img/bengalcoder-hero-image.svg" width="400px" /> -->
+          <lottie :width="400" :height="400" :options="lottieOptions" />
         </div>
       </div>
     </section>
     <!-- ./ Hero Section  -->
     <!-- Blurb Section  -->
-    <section class="blurb py-10 md:py-20">
+    <section class="blurb py-10 md:py-14">
       <div class="container mx-auto">
         <h1 class="text-center text-4xl font-bold">we teach you to</h1>
         <div class="flex mt-16 gap-10">
           <div class="w-full md:w-1/3">
-            <div class="px-10 py-12 rounded-lg border text-center">
+            <div
+              class="
+                px-10
+                py-12
+                rounded-lg
+                bg-gray-100
+                dark:bg-gray-700
+                text-center
+              "
+            >
               <svg
                 class="w-12 h-12 mx-auto"
                 fill="none"
@@ -56,7 +66,16 @@
             </div>
           </div>
           <div class="w-full md:w-1/3">
-            <div class="px-10 py-12 rounded-lg border text-center">
+            <div
+              class="
+                px-10
+                py-12
+                rounded-lg
+                bg-gray-100
+                dark:bg-gray-700
+                text-center
+              "
+            >
               <svg
                 class="w-12 h-12 mx-auto"
                 fill="none"
@@ -79,7 +98,16 @@
             </div>
           </div>
           <div class="w-full md:w-1/3">
-            <div class="px-10 py-12 rounded-lg border text-center">
+            <div
+              class="
+                px-10
+                py-12
+                rounded-lg
+                bg-gray-100
+                dark:bg-gray-700
+                text-center
+              "
+            >
               <svg
                 class="w-12 h-12 mx-auto"
                 fill="none"
@@ -109,5 +137,17 @@
 </template>
 
 <script>
-export default {}
+import lottie from 'vue-lottie/src/lottie.vue'
+import * as animationData from '~/assets/lottie/sitting-on-desk-using-pc.json'
+
+export default {
+  components: {
+    lottie,
+  },
+  data() {
+    return {
+      lottieOptions: { animationData: animationData.default },
+    }
+  },
+}
 </script>
