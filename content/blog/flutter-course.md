@@ -1,5 +1,8 @@
 ---
-title: Flutter Course
+title: 'Flutter for Noobs: Free Flutter Course in Bengali'
+date: 2020-12-30
+tags: [Flutter]
+published: true
 ---
 
 Body Content
@@ -13,4 +16,5 @@ http.createServer((req, res) => {
     res.end(body)
   })
 }).listen(3000)
+
 ```
