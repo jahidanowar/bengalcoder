@@ -133,16 +133,21 @@
       </div>
     </section>
     <!-- ./ Blurb Section -->
+    <div class="container mx-auto py-10">
+      <cta />
+    </div>
   </div>
 </template>
 
 <script>
 import lottie from 'vue-lottie/src/lottie.vue'
 import * as animationData from '~/assets/lottie/sitting-on-desk-using-pc.json'
+import Cta from '~/components/organism/Cta.vue'
 
 export default {
   components: {
     lottie,
+    Cta,
   },
   data() {
     return {
