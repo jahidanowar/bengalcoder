@@ -13,11 +13,7 @@
       "
     >
       <div>
-        <img
-          src="~/assets/img/benaglcoder_logo.svg"
-          alt="Bengal Coder"
-          width="200px"
-        />
+        <logo class="w-48" />
       </div>
       <div>
         <ul class="flex justify-around items-center">
@@ -38,9 +34,10 @@
 
 <script>
 import ColorSwitcher from '../atoms/ColorSwitcher.vue'
+import Logo from '../atoms/Logo.vue'
 
 export default {
-  components: { ColorSwitcher },
+  components: { ColorSwitcher, Logo },
 }
 </script>
 

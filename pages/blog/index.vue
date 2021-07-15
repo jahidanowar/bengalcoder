@@ -1,6 +1,13 @@
 <template>
   <div class="blog">
-    {{ blogs }}
+    <div class="bg-gray-100 dark:bg-gray-700 py-20">
+      <div class="container mx-auto">
+        <h1 class="text-center title">Blog</h1>
+      </div>
+    </div>
+    <div class="container mx-auto py-10">
+      {{ blogs }}
+    </div>
   </div>
 </template>
 

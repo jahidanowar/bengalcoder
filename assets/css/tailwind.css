@@ -14,3 +14,7 @@ body {
 .btn-primary {
   @apply bg-indigo-500 hover:bg-indigo-600 text-white dark:bg-indigo-600 dark:hover:bg-indigo-700;
 }
+
+h1.title {
+  @apply text-3xl md:text-5xl font-bold;
+}
