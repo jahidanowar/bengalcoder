@@ -23,28 +23,24 @@
           newsletter and we&#x27;ll email you every time we release a new batch
           of components.
         </p>
-        <form>
-          <div class="sm:flex jusitfy-start mt-6">
-            <form
-              class="
-                flex flex-col
-                md:flex-row
-                w-full
-                max-w-sm
-                md:space-x-3
-                space-y-3
-                md:space-y-0
-              "
-            >
-              <div class="relative">
-                <input type="text" class="form-control" placeholder="Email" />
-              </div>
-              <button class="flex-shrink-0 btn btn-primary" type="submit">
-                Subscribe
-              </button>
-            </form>
-          </div>
-        </form>
+        <div class="sm:flex jusitfy-start mt-6">
+          <form
+            class="
+              flex flex-col
+              md:flex-row
+              w-full
+              max-w-sm
+              md:space-x-3
+              space-y-3
+              md:space-y-0
+            "
+          >
+            <input type="text" class="form-control" placeholder="Email" />
+            <button class="flex-shrink-0 btn btn-primary" type="submit">
+              Subscribe
+            </button>
+          </form>
+        </div>
       </div>
       <div class="w-1/2">
         <img
