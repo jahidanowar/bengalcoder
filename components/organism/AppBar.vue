@@ -16,7 +16,7 @@
           <logo class="w-48" />
         </nuxt-link>
       </div>
-      <button class="md:hidden" @click="show = !show">
+      <button class="sm:hidden" @click="show = !show">
         <svg
           class="w-6 h-6"
           fill="currentColor"
@@ -32,7 +32,7 @@
       </button>
       <div
         :class="show ? 'block' : 'hidden'"
-        class="w-full md:w-auto mt-5 md:mt-0"
+        class="w-full md:w-auto mt-5 md:mt-0 sm:block"
       >
         <ul class="flex flex-col md:flex-row justify-around md:items-center">
           <li class="px-3 py-1"><nuxt-link to="/">home</nuxt-link></li>
@@ -58,8 +58,13 @@ export default {
   components: { ColorSwitcher, Logo },
   data() {
     return {
-      show: true,
+      show: false,
     }
+  },
+  watch: {
+    $route() {
+      this.show = false
+    },
   },
 }
 </script>
