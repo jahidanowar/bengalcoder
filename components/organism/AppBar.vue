@@ -6,17 +6,32 @@
         mx-auto
         flex flex-wrap
         md:flex-nowrap
-        justify-center
-        md:justify-between
+        justify-between
         items-center
         py-3
       "
     >
       <div>
-        <logo class="w-48" />
+        <nuxt-link to="/">
+          <logo class="w-48" />
+        </nuxt-link>
       </div>
-      <div>
-        <ul class="flex justify-around items-center">
+      <button class="md:hidden" @click="show = !show">
+        <svg
+          class="w-6 h-6"
+          fill="currentColor"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M3 7a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 13a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+      <div v-if="show" class="w-full mt-5 md:mt-0">
+        <ul class="flex flex-col md:flex-row justify-around md:items-center">
           <li class="px-3 py-1"><nuxt-link to="/">home</nuxt-link></li>
           <li class="px-3 py-1"><nuxt-link to="/blog">blog</nuxt-link></li>
           <li class="px-3 py-1">
@@ -38,6 +53,11 @@ import Logo from '../atoms/Logo.vue'
 
 export default {
   components: { ColorSwitcher, Logo },
+  data() {
+    return {
+      show: true,
+    }
+  },
 }
 </script>
 
