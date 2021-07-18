@@ -1,5 +1,5 @@
 <template>
-  <div class="content">
+  <div>
     <article class="container mx-auto py-20">
       <div class="md:w-9/12 mx-auto mb-10">
         <img
@@ -32,8 +32,10 @@
         <h1 class="text-3xl md:text-5xl font-bold">
           {{ blog.title }}
         </h1>
-        <lite-youtube v-if="blog.video" :videoid="blog.video" />
-        <nuxt-content :document="blog" class="my-10" />
+        <div class="content">
+          <lite-youtube v-if="blog.video" :videoid="blog.video" />
+          <nuxt-content :document="blog" class="my-10" />
+        </div>
         <!-- Blog Meta -->
         <div
           class="
