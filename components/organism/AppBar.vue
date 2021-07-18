@@ -30,7 +30,10 @@
           ></path>
         </svg>
       </button>
-      <div v-if="show" class="w-full mt-5 md:mt-0">
+      <div
+        :class="show ? 'block' : 'hidden'"
+        class="w-full md:w-auto mt-5 md:mt-0"
+      >
         <ul class="flex flex-col md:flex-row justify-around md:items-center">
           <li class="px-3 py-1"><nuxt-link to="/">home</nuxt-link></li>
           <li class="px-3 py-1"><nuxt-link to="/blog">blog</nuxt-link></li>
