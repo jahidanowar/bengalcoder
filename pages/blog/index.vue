@@ -17,17 +17,12 @@
 import GridBlog from '~/components/molecules/GridBlog.vue'
 export default {
   components: { GridBlog },
-  data() {
-    return {
-      blogs: null,
-    }
-  },
-  async fetch() {
-    const blogs = await this.$content('blog')
+  async asyncData({ $content }) {
+    const blogs = await $content('blog')
       .where({ published: { $ne: false } })
       .sortBy('date', 'desc')
       .fetch()
-    this.blogs = blogs
+    return { blogs }
   },
 }
 </script>

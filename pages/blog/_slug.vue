@@ -22,19 +22,37 @@
           "
         >
           <!-- Meta Goes here -->
-          <post-meta :property="blog" />
-          <div>
+          <post-meta :property="blog" class="w-1/2" />
+          <div class="w-1/2">
             <!-- Share Buttons  -->
-            <div class="flex">
-              <a href=""> </a>
-            </div>
+            <share-widget />
           </div>
         </div>
         <!-- ./ Blog Meta  -->
         <h1 class="text-3xl md:text-5xl font-bold">
           {{ blog.title }}
         </h1>
-        <nuxt-content :document="blog" class="mt-10" />
+        <nuxt-content :document="blog" class="my-10" />
+        <!-- Blog Meta -->
+        <div
+          class="
+            flex
+            justify-between
+            items-center
+            border-t border-b
+            py-5
+            mb-8
+            dark:border-gray-600
+          "
+        >
+          <!-- Meta Goes here -->
+          <post-meta :property="blog" class="w-1/2" />
+          <div class="w-1/2">
+            <!-- Share Buttons  -->
+            <share-widget />
+          </div>
+        </div>
+        <!-- ./ Blog Meta  -->
       </div>
     </article>
   </div>
@@ -42,17 +60,25 @@
 
 <script>
 import PostMeta from '~/components/molecules/PostMeta.vue'
+import ShareWidget from '~/components/molecules/ShareWidget.vue'
 export default {
-  components: { PostMeta },
-  data() {
-    return {
-      blog: null,
-    }
-  },
-  async fetch() {
-    this.blog = await this.$content('blog', this.$route.params.slug)
+  components: { PostMeta, ShareWidget },
+  async asyncData({ $content, params }) {
+    const blog = await $content('blog', params.slug)
       .where({ published: { $ne: false } })
       .fetch()
+    return { blog }
+  },
+  head() {
+    return {
+      title: this.blog.title,
+      meta: [
+        {
+          name: 'description',
+          content: this.blog.description,
+        },
+      ],
+    }
   },
 }
 </script>

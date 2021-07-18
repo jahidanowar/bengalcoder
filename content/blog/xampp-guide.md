@@ -1,5 +1,6 @@
 ---
 title: How to Install WordPress in Xampp
+description: Install wordpress in xampp in windows pc
 date: 2021-1-1
 tags: [Wordpress]
 thumbnail: 'https://res.cloudinary.com/bengalcoder/image/upload/v1626540318/how-to-install-wordpress-in-your-local-computer_hstiom.jpg'
