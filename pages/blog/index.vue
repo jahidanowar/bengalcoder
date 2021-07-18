@@ -17,8 +17,8 @@
 import GridBlog from '~/components/molecules/GridBlog.vue'
 export default {
   components: { GridBlog },
-  async asyncData({ $content }) {
-    const blogs = await $content('blog')
+  async asyncData({ $content, app }) {
+    const blogs = await $content(`${app.i18n.locale}/blog`)
       .where({ published: { $ne: false } })
       .sortBy('date', 'desc')
       .fetch()

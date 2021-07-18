@@ -11,7 +11,9 @@
       duration-300
     "
   >
-    <nuxt-link :to="{ name: 'blog-slug', params: { slug: blog.slug } }">
+    <nuxt-link
+      :to="localePath({ name: 'blog-slug', params: { slug: blog.slug } })"
+    >
       <img :src="blog.thumbnail" :alt="blog.title" />
       <div class="p-4">
         <p class="text-sm mb-3">{{ blog.date | formatDate }}</p>

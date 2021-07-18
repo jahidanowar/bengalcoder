@@ -1,5 +1,7 @@
 <template>
-  <div class="bg-white dark:bg-gray-800 shadow-none dark:shadow-xl">
+  <div
+    class="bg-white dark:bg-gray-800 shadow-none dark:shadow-xl duration-200"
+  >
     <div
       class="
         container
@@ -35,15 +37,22 @@
         class="w-full md:w-auto mt-5 md:mt-0 sm:block"
       >
         <ul class="flex flex-col md:flex-row justify-around md:items-center">
-          <li class="px-3 py-1"><nuxt-link to="/">home</nuxt-link></li>
-          <li class="px-3 py-1"><nuxt-link to="/blog">blog</nuxt-link></li>
           <li class="px-3 py-1">
-            <nuxt-link to="/contribute">contribute</nuxt-link>
+            <nuxt-link to="/">{{ $t('appbar.home') }}</nuxt-link>
           </li>
           <li class="px-3 py-1">
-            <nuxt-link to="/join">join community</nuxt-link>
+            <nuxt-link to="/blog">{{ $t('appbar.blog') }}</nuxt-link>
+          </li>
+          <li class="px-3 py-1">
+            <nuxt-link to="/contribute">{{
+              $t('appbar.contribute')
+            }}</nuxt-link>
+          </li>
+          <li class="px-3 py-1">
+            <nuxt-link to="/join">{{ $t('appbar.join') }}</nuxt-link>
           </li>
           <li class="px-3 py-1"><color-switcher /></li>
+          <li class="px-3 py-1"><language-switcher /></li>
         </ul>
       </div>
     </div>
@@ -52,10 +61,11 @@
 
 <script>
 import ColorSwitcher from '../atoms/ColorSwitcher.vue'
+import LanguageSwitcher from '../atoms/LanguageSwitcher.vue'
 import Logo from '../atoms/Logo.vue'
 
 export default {
-  components: { ColorSwitcher, Logo },
+  components: { ColorSwitcher, Logo, LanguageSwitcher },
   data() {
     return {
       show: false,

@@ -7,19 +7,14 @@
       >
         <div class="w-full md:w-1/2 mb-10 md:mb-0 text-center md:text-left">
           <h1 class="text-4xl md:text-6xl font-bold leading-tight">
-            we help you to build
-            <span class="text-indigo-500 dark:text-indigo-600"
-              >your career</span
-            >
-            on the internet
+            {{ $t('hero.title') }}
           </h1>
           <p class="mt-5 text-xl md:pr-24">
-            bengalcoder provide all the essential skill sets that all you need
-            to succeed in the field of IT.
+            {{ $t('hero.description') }}
           </p>
-          <nuxt-link to="/blog" class="btn btn-primary mt-5 inline-block"
-            >learn now</nuxt-link
-          >
+          <nuxt-link to="/blog" class="btn btn-primary mt-5 inline-block">{{
+            $t('hero.btn')
+          }}</nuxt-link>
         </div>
         <div class="w-full md:w-1/2 overflow-hidden">
           <!-- <img src="~/assets/img/bengalcoder-hero-image.svg" width="400px" /> -->

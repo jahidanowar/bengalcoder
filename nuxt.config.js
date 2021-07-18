@@ -38,7 +38,17 @@ export default {
     '@nuxtjs/pwa',
     // https://go.nuxtjs.dev/content
     '@nuxt/content',
+    'nuxt-i18n',
   ],
+
+  i18n: {
+    locales: [
+      { code: 'bn', name: 'বাংলা', iso: 'bn', file: 'bn.js' },
+      { code: 'en', name: 'English', iso: 'en-US', file: 'en.js' },
+    ],
+    defaultLocale: 'bn',
+    langDir: '~/locales/',
+  },
 
   // PWA module configuration: https://go.nuxtjs.dev/pwa
   pwa: {

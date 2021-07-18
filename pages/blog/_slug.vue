@@ -66,8 +66,8 @@ import PostMeta from '~/components/molecules/PostMeta.vue'
 import ShareWidget from '~/components/molecules/ShareWidget.vue'
 export default {
   components: { PostMeta, ShareWidget },
-  async asyncData({ $content, params }) {
-    const blog = await $content('blog', params.slug)
+  async asyncData({ $content, params, app }) {
+    const blog = await $content(`${app.i18n.locale}/blog`, params.slug)
       .where({ published: { $ne: false } })
       .fetch()
     return { blog }
