@@ -23,5 +23,5 @@ h1.title {
   @apply w-full rounded-lg p-3 border dark:border-gray-500 focus:outline-none dark:bg-gray-600 focus:border-gray-400 text-gray-500 dark:text-gray-200;
 }
 lite-youtube {
-  @apply rounded-xl;
+  @apply rounded-xl mt-8;
 }
