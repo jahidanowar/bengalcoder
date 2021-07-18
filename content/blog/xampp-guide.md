@@ -7,7 +7,7 @@ thumbnail: 'https://res.cloudinary.com/bengalcoder/image/upload/v1626540318/how-
 video: Et7hBGqXRvg
 published: true
 author: Jahid
-avatar: https://landkit.goodthemes.co/assets/img/avatars/avatar-1.jpg
+avatar: https://res.cloudinary.com/bengalcoder/image/upload/v1626592843/jahid_bo0fiu.png
 ---
 
 We are geeks, we love to play with code. What if you are playing with wordpress code and suddenly your whole website brake down. what will you do ? Why not do it in the local host and once it is done we can deploy it to the hosting.

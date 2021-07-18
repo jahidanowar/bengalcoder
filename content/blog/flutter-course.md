@@ -7,5 +7,5 @@ thumbnail: https://res.cloudinary.com/bengalcoder/image/upload/v1626539825/flutt
 video: 8PYErbzDR_o
 published: true
 author: Jahid
-avatar: https://landkit.goodthemes.co/assets/img/avatars/avatar-1.jpg
+avatar: https://res.cloudinary.com/bengalcoder/image/upload/v1626592843/jahid_bo0fiu.png
 ---

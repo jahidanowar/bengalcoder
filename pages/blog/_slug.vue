@@ -89,35 +89,36 @@ export default {
 The great reset
 */
 .content h1,
-h2,
-h3,
-h4 {
+.content h2,
+.content h3,
+.content h4 {
   @apply font-bold;
 }
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-pre,
-code,
-img,
-blockquote,
-ul,
-ol,
-li,
-dl,
-dt,
-dd,
-table,
-tr,
-th,
-td {
+.content h1,
+.content h2,
+.content h3,
+.content h4,
+.content h5,
+.content p,
+.content pre,
+.content code,
+.content blockquote,
+.content ul,
+.content ol,
+.content li,
+.content dl,
+.content dt,
+.content dd,
+.content table,
+.content tr,
+.content th,
+.content td {
   @apply mb-5;
 }
-pre {
+.content h2 {
+  @apply text-3xl;
+}
+.content pre {
   @apply rounded-xl dark:bg-gray-700;
 }
 </style>
