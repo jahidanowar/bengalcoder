@@ -1,5 +1,5 @@
 ---
-title: 'Flutter for Noobs: Free Flutter Course in Bengali'
+title: 'হাবলুদের জন্য জন্য Flutter: বাংলায় ফ্রি ফ্লটার কোর্স'
 description: Flutter course for beginner
 date: 2020-12-30
 tags: [Flutter]

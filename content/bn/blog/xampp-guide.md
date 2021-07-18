@@ -1,5 +1,5 @@
 ---
-title: How to Install WordPress in Xampp
+title: কীভাবে XAMPP-তে ওয়ার্ডপ্রেস ইনস্টল করবেন
 description: Install wordpress in xampp in windows pc
 date: 2021-1-1
 tags: [Wordpress]
