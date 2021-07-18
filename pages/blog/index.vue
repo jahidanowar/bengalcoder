@@ -1,6 +1,6 @@
 <template>
   <div class="blog">
-    <div class="bg-gray-100 dark:bg-gray-700 py-14 md:py-20">
+    <div class="py-14 md:py-20">
       <div class="container mx-auto">
         <h1 class="text-center title">Blog</h1>
       </div>
