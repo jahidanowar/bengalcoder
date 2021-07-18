@@ -2,7 +2,10 @@
 title: 'Flutter for Noobs: Free Flutter Course in Bengali'
 date: 2020-12-30
 tags: [Flutter]
+thumbnail: https://res.cloudinary.com/bengalcoder/image/upload/v1626539825/flutter-course_bhtexz.png
 published: true
+author: Jahid
+avatar: https://landkit.goodthemes.co/assets/img/avatars/avatar-1.jpg
 ---
 
 Body Content
