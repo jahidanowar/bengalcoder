@@ -32,7 +32,7 @@
     <section class="blurb py-10 md:py-14">
       <div class="container mx-auto">
         <h1 class="text-center text-4xl font-bold">we teach you to</h1>
-        <div class="flex mt-16 gap-10">
+        <div class="flex flex-wrap md:flex-nowrap mt-16 gap-10">
           <div class="w-full md:w-1/3">
             <div
               class="
