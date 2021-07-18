@@ -24,6 +24,11 @@ export default {
       .fetch()
     return { blogs }
   },
+  head() {
+    return {
+      title: 'Blog',
+    }
+  },
 }
 </script>
 

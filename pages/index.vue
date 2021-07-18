@@ -154,5 +154,17 @@ export default {
       lottieOptions: { animationData: animationData.default },
     }
   },
+  head() {
+    return {
+      title: 'Bengal Coder - Learn Programming in Bengali',
+      meta: [
+        {
+          name: 'description',
+          content:
+            'Bengal Coder is Platform where you can learn programming and web development in Bengali. We help you to build your career online',
+        },
+      ],
+    }
+  },
 }
 </script>
