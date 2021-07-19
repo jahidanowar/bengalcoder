@@ -48,6 +48,7 @@ export default {
     ],
     defaultLocale: 'bn',
     langDir: '~/locales/',
+    strategy: 'prefix',
   },
 
   // PWA module configuration: https://go.nuxtjs.dev/pwa
