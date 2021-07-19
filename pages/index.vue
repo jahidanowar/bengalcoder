@@ -6,9 +6,10 @@
         class="container mx-auto flex flex-wrap justify-between items-center"
       >
         <div class="w-full md:w-1/2 mb-10 md:mb-0 text-center md:text-left">
-          <h1 class="text-4xl md:text-6xl font-bold leading-tight">
-            {{ $t('hero.title') }}
-          </h1>
+          <h1
+            class="text-4xl md:text-6xl font-bold leading-tight"
+            v-html="$t('hero.title')"
+          ></h1>
           <p class="mt-5 text-xl md:pr-24">
             {{ $t('hero.description') }}
           </p>
