@@ -1,4 +1,4 @@
-# bengalcoder
+Bengal Coder is Platform where you can learn programming and web development in Bengali. We help you to build your career online.
 
 ## Build Setup
 
@@ -17,53 +17,49 @@ $ npm run start
 $ npm run generate
 ```
 
-For detailed explanation on how things work, check out the [documentation](https://nuxtjs.org).
+## 👼 Guide to contribute
 
-## Special Directories
+You can contribute by writing blog post or translating existing blogs. All your contribution will be your own. Your contributed article and translation will be posted with your attribute (Name, Avatar).
 
-You can create the following extra directories, some of which have special behaviors. Only `pages` is required; you can delete them if you don't want to use their functionality.
+Bengal Coder is Markdown based platform so in order to contribute you should know basic formatting using `.md` file.
 
-### `assets`
+### 👨‍💻 Step 1: Basic structure
 
-The assets directory contains your uncompiled assets such as Stylus or Sass files, images, or fonts.
+All the blog posts are stored in `content` directory. Once you are in the `content` you will find language specific folder now choose your prefered language folder and then inside the folder you will get the `blog` directory. This is where you have to submit your article.
 
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/assets).
+### ✍️ Step 2: Create post
 
-### `components`
+Now create post `.md` file with unique file name. Please make sure it's a a unique name and use `-`(dash) instead of space.
 
-The components directory contains your Vue.js components. Components make up the different parts of your page and can be reused and imported into your pages, layouts and even other components.
+Copy the structure all the meta info will go first then the post content will go in the body.
 
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/components).
+```md
+---
+title: 'Post title goes here (maximum: 75 word)'
+description: 'Post meta description goes here (maximum: 250 words)'
+date: 2020-12-30 (Fromat: YYYY-MM-DD)
+tags: [Flutter, App] (Multiple tags should be separated with comma)
+thumbnail: https://res.cloudinary.com/bengalcoder/image/upload/v1626539825/flutter-course_bhtexz.png (Thumbnail should be hosted in cloudniay or imgbb)
+video: 8PYErbzDR_o (If the post has video then give the youtube video id here otherwise remove this attribute)
+author: Jahid (Write your name )
+avatar: https://res.cloudinary.com/bengalcoder/image/upload/v1626592843/jahid_bo0fiu.png (Your avatar url make sure the image is 150x150px other format will not be allowed)
+---
 
-### `layouts`
+## Post Body goes here
 
-Layouts are a great help when you want to change the look and feel of your Nuxt app, whether you want to include a sidebar or have distinct layouts for mobile and desktop.
+write your awesome post content here
+```
 
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/layouts).
+### 🚀 Final Step: Submit post
 
+Create a pull request If it pass the test, The maintainer will merge it with the master and it will be published in the next build.
 
-### `pages`
+That's 🎉 it thanks for contribution 👨‍💻
 
-This directory contains your application views and routes. Nuxt will read all the `*.vue` files inside this directory and setup Vue Router automatically.
+## Contributions & Issues
 
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/get-started/routing).
+Please feel free to raise an issue for suggestions or bugs. You can ,essage me on twitter [@jahidDev](https://twitter.com/jahidDev).
 
-### `plugins`
+## License
 
-The plugins directory contains JavaScript plugins that you want to run before instantiating the root Vue.js Application. This is the place to add Vue plugins and to inject functions or constants. Every time you need to use `Vue.use()`, you should create a file in `plugins/` and add its path to plugins in `nuxt.config.js`.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/plugins).
-
-### `static`
-
-This directory contains your static files. Each file inside this directory is mapped to `/`.
-
-Example: `/static/robots.txt` is mapped as `/robots.txt`.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/static).
-
-### `store`
-
-This directory contains your Vuex store files. Creating a file in this directory automatically activates Vuex.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/store).
+> _The project is released under the WTFPL2 [Do What The F\*ck You Want To Public License](LICENSE)._
