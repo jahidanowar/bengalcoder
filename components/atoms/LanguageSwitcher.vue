@@ -6,7 +6,7 @@
         dark:bg-gray-700
         py-2
         px-4
-        rounded
+        rounded-lg
         focus:outline-none
         border border-transparent
       "
