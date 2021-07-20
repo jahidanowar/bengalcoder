@@ -46,7 +46,7 @@ export default {
       { code: 'bn', name: 'বাংলা', iso: 'bn', file: 'bn.js' },
       { code: 'en', name: 'English', iso: 'en-US', file: 'en.js' },
     ],
-    defaultLocale: 'bn',
+    defaultLocale: 'en',
     langDir: '~/locales/',
     strategy: 'prefix',
   },
@@ -55,6 +55,10 @@ export default {
   pwa: {
     manifest: {
       lang: 'en',
+      name: 'Bengal Coder',
+      short_name: 'Bengal Coder',
+      description: 'Programming videos and post in Bangla',
+      theme_color: '#6366F1',
     },
   },
 
