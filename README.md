@@ -1,4 +1,5 @@
 Bengal Coder is Platform where you can learn programming and web development in Bengali. We help you to build your career online.
+👉 [Join Bangla Coder community now](https://www.youtube.com/c/BengalCoder?sub_confirmation=1)
 
 ## Build Setup
 
