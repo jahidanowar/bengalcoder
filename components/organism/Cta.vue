@@ -36,9 +36,14 @@
             "
           >
             <input type="text" class="form-control" placeholder="Email" />
-            <button class="flex-shrink-0 btn btn-primary" type="submit">
+            <a
+              href="https://www.youtube.com/channel/UCxS0sVHUyxRHlR2ib5WIELA?sub_confirmation=1"
+              target="_blank"
+              class="flex-shrink-0 btn btn-primary"
+              type="submit"
+            >
               Subscribe
-            </button>
+            </a>
           </form>
         </div>
       </div>

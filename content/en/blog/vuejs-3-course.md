@@ -1,5 +1,5 @@
 ---
-title: 'Vue.js 3.0 Bangla Course'
+title: 'Vue.js 3 for Noobs: Bangla Course'
 description: 'Build cool Web Apps and SPAs with Vue.js 3.0: The most loved JavaScript framework.'
 date: 2021-08-02
 tags: [Vue]

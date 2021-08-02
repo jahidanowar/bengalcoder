@@ -1,7 +1,7 @@
 ---
 title: কীভাবে XAMPP-তে ওয়ার্ডপ্রেস ইনস্টল করবেন
 description: Install wordpress in xampp in windows pc
-date: 2021-1-1
+date: 2020-01-01
 tags: [Wordpress]
 thumbnail: 'https://res.cloudinary.com/bengalcoder/image/upload/v1626540318/how-to-install-wordpress-in-your-local-computer_hstiom.jpg'
 video: Et7hBGqXRvg
