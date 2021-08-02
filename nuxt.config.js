@@ -64,6 +64,7 @@ export default {
 
   colorMode: {
     classSuffix: '',
+    mode: 'light',
   },
 
   // Content module configuration: https://go.nuxtjs.dev/config-content

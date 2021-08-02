@@ -5,7 +5,7 @@
         px-10
         py-12
         overflow-hidden
-        lg:p-12
+        lg:p-10
         xl:p-16
         flex flex-wrap-reverse
         md:flex-nowrap
@@ -19,41 +19,21 @@
           We&#x27;ve got more coming...
         </h2>
         <p class="mt-2 max-w-xl text-base">
-          Want to hear from us when we add new components? Sign up for our
-          newsletter and we&#x27;ll email you every time we release a new batch
-          of components.
+          Want to hear from us when we add new videos? join our facebook group
+          and we&#x27;ll notify you every time we release a new video.
         </p>
         <div class="sm:flex jusitfy-start mt-6">
-          <form
-            class="
-              flex flex-col
-              md:flex-row
-              w-full
-              max-w-sm
-              md:space-x-3
-              space-y-3
-              md:space-y-0
-            "
+          <a
+            href="https://www.youtube.com/channel/UCxS0sVHUyxRHlR2ib5WIELA?sub_confirmation=1"
+            target="_blank"
+            class="flex-shrink-0 btn btn-primary text-center"
+            type="submit"
           >
-            <input type="text" class="form-control" placeholder="Email" />
-            <a
-              href="https://www.youtube.com/channel/UCxS0sVHUyxRHlR2ib5WIELA?sub_confirmation=1"
-              target="_blank"
-              class="flex-shrink-0 btn btn-primary"
-              type="submit"
-            >
-              Subscribe
-            </a>
-          </form>
+            Subscribe now
+          </a>
         </div>
       </div>
-      <div class="w-1/2">
-        <img
-          class="w-72 md:mx-auto"
-          src="https://bengalcoder.com/wp-content/uploads/2020/01/bengal-coder-community.svg"
-          alt="Bengal Coder Community"
-        />
-      </div>
+      <div class="w-1/2"></div>
     </div>
   </div>
 </template>
