@@ -4,6 +4,7 @@ export default {
     description:
       'bengalcoder provide all the essential skill sets that all you need to succeed in the field of software engineering',
     btn: "let's start now",
+    watch: 'watch videos',
   },
   appbar: {
     home: 'home',

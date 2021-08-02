@@ -16,24 +16,30 @@
     >
       <div>
         <h2 class="text-2xl font-semibold font-display sm:text-3xl">
-          We&#x27;ve got more coming...
+          we&#x27;ve got more coming...
         </h2>
         <p class="mt-2 max-w-xl text-base">
-          Want to hear from us when we add new videos? join our facebook group
+          want to hear from us when we add new videos? join our facebook group
           and we&#x27;ll notify you every time we release a new video.
         </p>
         <div class="sm:flex jusitfy-start mt-6">
           <a
-            href="https://www.youtube.com/channel/UCxS0sVHUyxRHlR2ib5WIELA?sub_confirmation=1"
+            href="https://www.facebook.com/groups/454989038771601"
             target="_blank"
             class="flex-shrink-0 btn btn-primary text-center"
             type="submit"
           >
-            Subscribe now
+            join fb group
           </a>
         </div>
       </div>
-      <div class="w-1/2"></div>
+      <div class="w-1/2">
+        <img
+          class="w-72 md:mx-auto"
+          src="~/assets/img/community.svg"
+          alt="Bengal Coder Community"
+        />
+      </div>
     </div>
   </div>
 </template>

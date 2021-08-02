@@ -16,6 +16,17 @@
           <nuxt-link to="/blog" class="btn btn-primary mt-5 inline-block">{{
             $t('hero.btn')
           }}</nuxt-link>
+          <a
+            href="https://www.youtube.com/channel/UCxS0sVHUyxRHlR2ib5WIELA?sub_confirmation=1"
+            target="_blank"
+            class="
+              btn
+              ml-3
+              border border-gray-500
+              hover:bg-gray-700 hover:text-gray-50
+            "
+            >{{ $t('hero.watch') }}</a
+          >
         </div>
         <div class="w-full md:w-1/2 overflow-hidden">
           <!-- <img src="~/assets/img/bengalcoder-hero-image.svg" width="400px" /> -->

@@ -38,6 +38,9 @@ lite-youtube {
 
 .content a {
   @apply text-indigo-500;
-  box-shadow: inset 0 -0.1666666667em 0 0 #fff,
+  transition: all 0.3s ease;
+}
+.content a:hover {
+  box-shadow: inset 0 -0.1666666667em 0 0 #c7d2fe,
     inset 0 -0.3333333333em 0 0 #c7d2fe;
 }
