@@ -25,7 +25,7 @@
           <post-meta :property="blog" class="w-1/2" />
           <div class="w-1/2">
             <!-- Share Buttons  -->
-            <share-widget :url="$route.params.slug" />
+            <share-widget :title="blog.title" />
           </div>
         </div>
         <!-- ./ Blog Meta  -->
@@ -52,7 +52,7 @@
           <post-meta :property="blog" class="w-1/2" />
           <div class="w-1/2">
             <!-- Share Buttons  -->
-            <share-widget :url="$route.params.slug" />
+            <share-widget :title="blog.title" />
           </div>
         </div>
         <!-- ./ Blog Meta  -->

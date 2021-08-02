@@ -1,7 +1,10 @@
 <template>
   <div class="flex justify-end">
     <p class="mr-5">Share:</p>
-    <a :href="url" class="mr-3 text-gray-500 dark:text-gray-400">
+    <a
+      :href="'https://twitter.com/share?text=' + title + '&url=' + currentUrl"
+      class="mr-3 text-gray-500 dark:text-gray-400"
+    >
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="24"
@@ -14,7 +17,11 @@
         />
       </svg>
     </a>
-    <a :href="url" class="mr-3 text-gray-500 dark:text-gray-400">
+    <a
+      :href="'whatsapp://send?text=' + title + ' 👉' + currentUrl"
+      data-action="share/whatsapp/share"
+      class="mr-3 text-gray-500 dark:text-gray-400"
+    >
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="24"
@@ -27,7 +34,10 @@
         />
       </svg>
     </a>
-    <a :href="url" class="text-gray-500 dark:text-gray-400">
+    <a
+      :href="'https://www.facebook.com/sharer/sharer.php?u=' + currentUrl"
+      class="text-gray-500 dark:text-gray-400"
+    >
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="24"
@@ -46,9 +56,14 @@
 <script>
 export default {
   props: {
-    url: {
+    title: {
       type: String,
       required: true,
+    },
+  },
+  computed: {
+    currentUrl() {
+      return 'https://www.bengalcoder.com' + this.$route.fullPath
     },
   },
 }
