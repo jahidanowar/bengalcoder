@@ -4,7 +4,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'bengalcoder',
+    title: 'BengalCoder',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -33,6 +33,7 @@ export default {
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
     '@nuxtjs/color-mode',
+    '@nuxtjs/google-analytics',
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -44,6 +45,7 @@ export default {
     'nuxt-i18n',
   ],
 
+  // Multi language support: https://go.nuxtjs.dev/config-i18n
   i18n: {
     locales: [
       { code: 'bn', name: 'বাংলা', iso: 'bn', file: 'bn.js' },
@@ -65,6 +67,7 @@ export default {
     },
   },
 
+  // Color Mode (https://go.nuxtjs.dev/color-mode):
   colorMode: {
     classSuffix: '',
     mode: 'light',
@@ -77,6 +80,11 @@ export default {
         theme: 'prism-themes/themes/prism-material-oceanic.css',
       },
     },
+  },
+
+  // Google Analytics: https://go.nuxtjs.dev/google-analytics
+  googleAnalytics: {
+    id: 'UA-128597158-2',
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
