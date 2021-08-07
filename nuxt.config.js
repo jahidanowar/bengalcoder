@@ -43,6 +43,7 @@ export default {
     // https://go.nuxtjs.dev/content
     '@nuxt/content',
     'nuxt-i18n',
+    '@nuxtjs/sitemap',
   ],
 
   // Multi language support: https://go.nuxtjs.dev/config-i18n
@@ -85,6 +86,13 @@ export default {
   // Google Analytics: https://go.nuxtjs.dev/google-analytics
   googleAnalytics: {
     id: 'UA-128597158-2',
+  },
+
+  // Sitemap: https://go.nuxtjs.dev/sitemap
+  sitemap: {
+    // options
+    hostname: 'https://www.bengalcoder.com',
+    gzip: true,
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
