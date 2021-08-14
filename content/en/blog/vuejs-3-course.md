@@ -15,7 +15,12 @@ avatar: https://res.cloudinary.com/bengalcoder/image/upload/v1626592843/jahid_bo
 ## Resource 📚
 
 - [Github Source](https://github.com/jahidanowar/vue3-course)
+- [🔥 Facebook Group](https://www.facebook.com/groups/454989038771601)
 - [Vue Documentation](https://v3.vuejs.org/guide/introduction.html)
+
+### If you don't know basic JavaScript consider learning it first then continuing this series 😊
+
+- [JavaScript by LearnwithSumit](https://www.youtube.com/watch?v=rePN-VFo1Eo&list=PLHiZ4m8vCp9OkrURufHpGUUTBjJhO9Ghy)
 - [Basic JS tutorial by Stacklearner](https://www.youtube.com/watch?v=qe9k1se3bSQ&list=PL_XxuZqN0xVAJTV_1ZXwB1XIiFkK0ddZA)
 
 ## Course Details 🧑‍💻
