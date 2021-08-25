@@ -7,7 +7,7 @@
       >
         <div class="w-full md:w-1/2 mb-10 md:mb-0 text-center md:text-left">
           <h1
-            class="text-4xl md:text-6xl font-bold leading-loose"
+            class="text-4xl md:text-5xl font-bold"
             v-html="$t('hero.title')"
           ></h1>
           <p class="mt-5 text-xl md:pr-24">

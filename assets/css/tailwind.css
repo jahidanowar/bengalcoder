@@ -2,14 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
+/* CSS Varibles  */
+
+:root {
+  --primary: #0033ff;
+  --secondary: #0099ff;
+  --primary-dark: #0033ff;
+  --secondary-dark: #0099ff;
+}
+
 body {
-  @apply bg-gray-50 dark:bg-gray-800 text-gray-700 dark:text-gray-200;
+  @apply font-mono bg-gray-50 dark:bg-gray-800 text-gray-700 dark:text-gray-200;
 }
 .container {
   @apply sm:px-5 lg:px-0 w-11/12 md:w-10/12 xl:max-w-screen-xl;
 }
 .btn {
-  @apply py-3 px-6 rounded-lg;
+  @apply py-3 px-6;
 }
 .btn-primary {
   @apply bg-indigo-500 hover:bg-indigo-600 text-white dark:bg-indigo-600 dark:hover:bg-indigo-700;
@@ -20,7 +29,7 @@ h1.title {
 }
 
 .form-control {
-  @apply w-full rounded-lg p-3 border dark:border-gray-500 focus:outline-none dark:bg-gray-600 focus:border-gray-400 text-gray-500 dark:text-gray-200;
+  @apply w-full p-3 border dark:border-gray-500 focus:outline-none dark:bg-gray-600 focus:border-gray-400 text-gray-500 dark:text-gray-200;
 }
 lite-youtube {
   @apply rounded-xl mt-8;
