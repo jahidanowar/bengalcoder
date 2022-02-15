@@ -2,15 +2,13 @@
   <div>
     <!-- Hero Section -->
     <section class="hero py-10 md:py-28">
-      <div
-        class="container mx-auto flex flex-wrap justify-between items-center"
-      >
-        <div class="w-full md:w-1/2 mb-10 md:mb-0 text-center md:text-left">
+      <div class="container mx-auto flex flex-wrap justify-center items-center">
+        <div class="w-full md:w-1/2 mb-10 md:mb-0 text-center">
           <h1
             class="text-4xl md:text-5xl font-bold"
             v-html="$t('hero.title')"
           ></h1>
-          <p class="mt-5 text-xl md:pr-24">
+          <p class="mt-5 md:pr-24">
             {{ $t('hero.description') }}
           </p>
           <nuxt-link to="/blog" class="btn btn-primary mt-5 inline-block">{{
@@ -22,16 +20,18 @@
             class="
               btn
               ml-3
-              border border-gray-500
-              hover:bg-gray-700 hover:text-gray-50
+              dark:bg-gray-600
+              bg-gray-200
+              text-gray-600
+              dark:text-gray-50
             "
             >{{ $t('hero.watch') }}</a
           >
         </div>
-        <div class="w-full md:w-1/2 overflow-hidden">
-          <!-- <img src="~/assets/img/bengalcoder-hero-image.svg" width="400px" /> -->
-          <lottie :width="400" :height="400" :options="lottieOptions" />
-        </div>
+        <!-- <div class="w-full md:w-1/2 overflow-hidden"> -->
+        <!-- <img src="~/assets/img/bengalcoder-hero-image.svg" width="400px" /> -->
+        <!-- <lottie :width="400" :height="400" :options="lottieOptions" /> -->
+        <!-- </div> -->
       </div>
     </section>
     <!-- ./ Hero Section  -->
@@ -146,13 +146,11 @@
 </template>
 
 <script>
-import lottie from 'vue-lottie/src/lottie.vue'
 import * as animationData from '~/assets/lottie/sitting-on-desk-using-pc.json'
 import Cta from '~/components/organism/Cta.vue'
 
 export default {
   components: {
-    lottie,
     Cta,
   },
   data() {
